@@ -1,0 +1,105 @@
+https://yourdomain.com 
+and https://yourdomain.com/dashboard.html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignAI - Owner Dashboard & AI Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Raleway', sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #f0f4f8, #d9e2ec); color: #333; }
+        header { background: linear-gradient(135deg, #ff6b3c, #ff9b5c); color: #fff; padding: 120px 20px 100px 20px; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+        header h1 { font-size: 72px; margin-bottom: 15px; font-weight: 700; letter-spacing: 2px; }
+        header p { font-size: 28px; font-weight: 500; }
+        nav { display: flex; justify-content: center; gap: 30px; background: #1a1a1a; padding: 18px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
+        nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: 18px; padding: 12px 20px; border-radius: 10px; transition: 0.3s; }
+        nav a:hover { background: #ff6b3c; }
+        section { padding: 80px 50px; max-width: 1200px; margin: 50px auto; background: #fff; border-radius: 30px; box-shadow: 0 25px 60px rgba(0,0,0,0.1); }
+        h2 { color: #ff6b3c; font-size: 38px; margin-bottom: 25px; font-weight: 700; }
+        p { font-size: 18px; line-height: 1.8; color: #555; }
+        .button { background: #ff6b3c; color: white; padding: 18px 45px; border: none; cursor: pointer; border-radius: 20px; font-size: 18px; font-weight: 700; transition: 0.3s; }
+        .button:hover { background: #ff914d; transform: scale(1.05); }
+        .dashboard { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px; }
+        .card { flex: 1 1 300px; background: #f9fafb; padding: 30px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); }
+        .card h3 { margin-top: 0; color: #ff6b3c; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: #ff6b3c; color: #fff; }
+        footer { text-align: center; padding: 80px 20px; background: #1a1a1a; color: white; font-size: 16px; border-top-left-radius: 60px; border-top-right-radius: 60px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DesignAI Owner Dashboard</h1>
+    <p>Private dashboard to manage AI projects, orders, and clients</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="orders.html">Orders</a>
+    <a href="help.html">Help</a>
+</nav>
+
+<section>
+    <h2>Dashboard Overview</h2>
+    <div class="dashboard">
+        <div class="card">
+            <h3>Total Orders</h3>
+            <p id="totalOrders">45</p>
+        </div>
+        <div class="card">
+            <h3>Pending Payments</h3>
+            <p id="pendingPayments">5</p>
+        </div>
+        <div class="card">
+            <h3>Completed Projects</h3>
+            <p id="completedProjects">40</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Orders List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Client</th>
+                <th>Project</th>
+                <th>Status</th>
+                <th>Payment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Client A</td>
+                <td>Logo Design</td>
+                <td>Completed</td>
+                <td>Paid</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Client B</td>
+                <td>Website Layout</td>
+                <td>Pending</td>
+                <td>Pending</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>AI Management</h2>
+    <p>Use this section to see active AI tasks, assign new projects, and track AI performance. AI will handle client requests automatically once payment is confirmed.</p>
+</section>
+
+<footer>
+    &copy; 2025 DesignAI. All rights reserved.
+</footer>
+
+</body>
+</html>
